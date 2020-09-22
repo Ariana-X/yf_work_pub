@@ -1,0 +1,40 @@
+body {
+	background: #f8f8f8;
+}
+
+// button
+button {
+	outline: none !important;
+}
+// 无限滚动底部提示
+.line-text {
+	span {
+		display: block;
+		position: relative;
+		text-align: center;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			/*定位背景横线的位置*/
+			top: 50%;
+			background: #333;
+			/*背景横线颜色*/
+			width: 25%;
+			/*单侧横线的长度*/
+			height: .013333rem;
+		}
+
+		&:before {
+			left: 5%;
+		}
+
+		&:after {
+			right: 5%;
+		}
+	}
+}
+.hide {
+	visibility: hidden;
+}
